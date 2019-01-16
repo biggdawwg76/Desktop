@@ -1,0 +1,510 @@
+
+26 DAYS LATER
+
+Randa
+QA Engineer
+1 
+May '15
+Air Date: 5/19/2015
+Video 24
+
+Importance of Coding Style
+What We Will Learn
+Understand why having a consistent style is important
+Understand good HTML and CSS style
+What is Coding Style?
+Coding Style is how we write, organize, and present our code. This includes having consistent indentations, character spacings, variable names, and code organization.
+
+Why is Style Important?
+Writing clean and organized code allows developers to:
+
+Write more efficiently
+Understand code more efficiently
+Communicate in a common style
+Having a good style helps our future selves to dive back into the code quickly and helps us effectively share code with other programmers.
+
+What's Good HTML and CSS Style?
+HTML
+The most important aspects to consider for HTML style is to have:
+
+Consistent Indentations
+Lower Case Names
+Sparse Comments
+Consistent Indentations
+Indentations should be consistent through the code and should follow a natural structure to help a reader understand how each HTML element relates to other elements. An example of good indentation:
+
+<div>
+  <div>
+    <div>
+      <p>Hello World!</p>
+    </div>
+  </div>
+</div>
+We can clearly see how all indentations take up the same amount of space and how each indentation tells us how all the div tags are nested within each other
+
+An example of bad indentation:
+
+<div>
+<div>
+       <div>
+   <p>Hello World!</p></div></div>
+</div>
+We cannot really understand how all the div tags are structured and it makes it hard to figure out which </div> tag goes with its corresponding <div>. This can lead to having missing end tags in the HTML.
+
+Lower Case Names
+It's more efficient to code all classes, attributes, and tags with lower case letters because it's faster to read and faster to code:
+
+<div id="num-1" class="article" tabindex=4></div>
+
+vs
+
+<div iD="NUM-1" Class="Article" TABINDEX=4></div>
+
+Sparse Comments
+Comments should be used sparingly in HTML and should be used to help outline and organize sections of the HTML code.
+
+<div>
+  <div>
+    <div>
+      <p>Hello World!</p>
+    </div>
+  </div>
+</div> <!--End Hello World Section-->
+<div>
+  <div>
+    <div>
+      <p>Hello Mom!</p>
+    </div>
+  </div>
+</div> <!--End Hello Mom Section-->
+<div>
+  <div>
+    <div>
+      <p>Hello Dad!</p>
+    </div>
+  </div>
+</div> <!--End Hello Dad Section-->
+CSS Tricks 116 has a great guide to illustrate what great HTML code should look like
+
+CSS
+The most important aspects to consider for CSS style is to have:
+
+Consistent Indentations
+One attribute per line
+Consistent spaces
+Consistent Indentations
+Below code illustrates consistent indentations in CSS:
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #666;
+  font-size: 18px;
+  line-height: 44px;
+}
+
+header {
+  margin-top: 14px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+Here is what inconsistent indentations look like:
+
+body {
+font-family: Verdana, sans-serif;
+  color: #666;
+ font-size: 18px;
+ line-height: 44px;
+}
+
+header { margin-top: 14px; }
+
+h1 {
+text-align: center;
+font-size: 24px;
+}
+Notice how it takes us a little bit more time to understand the flow and structure of the CSS code. It's important to make reading code as easy as possible to help other people understand and implement your code.
+
+One Attribute per Line
+For development code, it's good to have one attribute per line. We should never put more than one attribute per line to make things easier to read.
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #666;
+  font-size: 18px;
+  line-height: 44px;
+}
+vs
+
+body {  font-family: Verdana, sans-serif; color: #666; font-size: 18px;
+  line-height: 44px; 
+}
+Consistent Spaces
+Spaces between attributes and values should be consistent across your entire CSS file. 
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #666;
+  font-size: 18px;
+  line-height: 44px;
+}
+vs
+
+body {
+  font-family:  Verdana, sans-serif;
+  color:#666;
+  font-size:   18px;
+  line-height:    44px;
+}
+We prefer to put a space after the ::
+
+line-height: 44px; vs line-height:44px;
+
+in order to help separate the value from the attribute.
+
+Final note, always remember to put a semicolon at the end of every CSS declaration!
+
+Tools
+Here are some tools that will help clean up HTML and CSS code that you should check out:
+
+HTML Beautifier 176
+
+CSS Beautifier 109
+
+Summary
+Developing good programming style should be a goal for beginner programmers because it lays the foundation for the programmer to code more efficiently and enable the programmer to successfully share his/her code.
+
+Indentations, spaces, and variables names are one of the most important aspects of programming for any language. It helps organize our code efficiently and helps us better communicate with our fellow programmers.
+
+Follow Up Questions
+Two students asked two great questions relating to styling lists and how to deal with a long link tag during the live Webcast. The questions are:
+
+How do you only bold the numbering in a ordered list?
+
+One way is to set the attribute: font-weight: bold; for the li tag and use a class to set the font-weight: normal; for the text that the li tag contains using a span tag
+
+How do you deal with long links in html code?
+
+We can simply put the rest of our code in a new line and leave the long link on one single line. Developers will be able to quickly realize that the long line just contains the long HTML link.
+
+Below is example code that demonstrates these two answers:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Foo</title>
+  <style>
+
+    li {
+      font-weight: bold;
+    }
+
+    .no-bold {
+      font-weight: normal;
+    }
+
+  </style>
+</head>
+<body>
+  <ol>
+    <li><span class="no-bold">Hello</span></li>
+    <li><span class="no-bold">Hello</span></li>
+    <li><a href="http://www.longlink.com/fjf/k4k4/fjkssl/kdjff/kfjjff/lksjd/fjdkfjf/kf">
+      Long Link Here</a></li>
+  </ol>
+</body>
+</html>
+6
+
+
+9 MONTHS LATER
+
+Luke
+Forum Mentor
+1 
+Feb '16
+From Mockup to Website
+Link to the webcast 39
+
+Explaining what we are going to do
+When designing a website, it is often a good idea to design a mockup, either by hand on paper, or by generating a pdf. This allows you to concentrate on designing, instead of coding.
+
+We won't be showing you how to make a mockup, as design is an We will be using the mockup provided in the course 'Intro to HTML and CSS', found here 54.
+
+There is a nice feature in designing things with tools built by other humans; the most natural method your mind works in is usually the one tools exist for!
+
+What we will do here is to follow the division your mind already most likely wants to make, by dividing the page into boxes.
+
+We'll start in the top left, and go from left to right, and then top to bottom, following something called the 'grid based layout'.
+
+We can use CSS to build our grid.
+
+Before we start that, let's build the most basic bit of HTML to link to our CSS file:
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Luke's Webpage from Mockup</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+
+</body>
+</html>
+From there, let's divide our mockup into boxes:
+
+mockup with boxest5fm8gu.png655x658 376 KB
+Let's build a grid into our CSS:
+
+/*First, let's make a class for our entire grid */
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/*Now let's make a class for something which takes up a whole row.*/
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+/*Finally, we'll need to make a column class for every column; 12 columns is the standard*/
+.col-1 {
+    width: 8.33%;
+}
+
+/*Each column expands by 8.3333%*/
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+Now, let's build our HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Luke's Webpage from Mockup</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Put the whole grid in one div -->
+    <div class="grid">
+        <div class="row top-line">
+            <div class="col-2">
+                <img src="http://i.imgur.com/bgJGtkO.png">
+            </div> <!-- Udacity symbol -->
+            <div class="col-10 signature">
+                <h1>JANE DOETTE</h1>FRONT-END NINJA
+            </div> <!-- Name and Title -->
+        </div>
+        <div class="row">
+            <img class="center-image" src="http://i.imgur.com/IiJ8Wxx.png"><!-- Image -->
+        </div>
+        <div class="row featured-work">
+          <h2>Featured Work</h2><!-- Featured Work -->
+        </div>
+        <div class="row featured-word-data"> <!-- featured work images and text -->
+            <div class="col-4">
+                <img src="http://i.imgur.com/4WI3E7I.png"><h3>APPIFY</h3>https://github.com/udacity/Appify/<!-- App image -->
+            </div>
+            <div class="col-4">
+                <img src="http://i.imgur.com/fsOuoTo.png"><h3>SUNFLOWER</h3>https://github.com/udacity/Sunflower/<!-- Flower image -->
+            </div>
+            <div class="col-4">
+                <img src="http://i.imgur.com/1hAJZCT.png"><h3>BOKEH</h3>https://github.com/udacity/Bokeh/<!-- Star image -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+Our semi-finished CSS would then look like this:
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.top-line {
+    border-bottom: solid #bcbbbb;
+}
+
+.signature {
+    text-align: right;
+}
+
+.center-image {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-height: 300px;
+}
+
+.featured-work {
+    font: 21px;
+    color: bcbbbb;
+}
+
+.featured-word-data {
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color: #747704;
+}
+/*First, let's make a class for our entire grid */
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/*Now let's make a class for something which takes up a whole row.*/
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+/*Finally, we'll need to make a column class for every column; 12 columns is the standard*/
+.col-1 {
+    width: 8.33%;
+}
+
+/*Each column expands by 8.3333%*/
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+Summary
+It's easy to note here that, although this is what we end up with, if you watch the video, it is obvious that the jumps are not nearly so sudden. Instead, pieces are built in one by one; first, boxes (divs) are outlined so we can see where they are going, then HTML is added to put what we want in each given box, then we put some more CSS in to guide the HTML so as to make the mockup incrementally look more and more like the mockup, etc. etc....
+
+Basically, the process is extremely incremental. First build your basics, then add features one by one, testing to see what the page looks after every change along the way. Things affecting structure are done first; these changes will need to happen in the HTML as well as the CSS. After we finish all of the structure, we only need to change the CSS as we morph our page slowly into the mockup.
+
+3
+
+
+8 DAYS LATER
+
+chelsea.udacity
+Community Manager
+Feb '16
+Air Date: 2/16/2016
+video 14
+
+HTML validation
+##What We Will Learn
+
+What is HTML validation and why it is important?
+How to debug a webpage
+###Files
+error-filled file
+validated file
+
+###Why is validating important
+HTML stands for HyperText Markup Language, and much like any other language, it has rules and guidelines to follow. A webpage that follows all of these rules and guidelines is said to be validated. Validation makes sure that your page will run properly on any system or browser used to view it and allows for a common set of standards for programmers to agree on. Oftentimes, a page that doesn’t validate will still work exactly as expected, in this case, why does validation matter.
+
+In this case properly validated code is much like an essay with proper spelling, grammar, punctuation, and formatting. An essay without these things will still be readable, but one that follows these rules is easier to understand and is the mark of a professional. Your code may work, but if it doesn’t validate, it makes it harder for other programmers to work with it and is a red flag for any employers.
+
+###Debugging
+The W3C HTML Validator 56 is your best friend here. You will want to copy/paste your code into here as you validate and fix errors. It is important to note that the validator will really only tell you which line is causing issues and give a probable reason. It’s up to you to diagnose exactly what the reason is and how to solve it. This is the ‘fun’ part of debugging.
+
+You can see all of the changes we made here 21
+
+Some highlights:
+
+All opened div tags must be closed!
+<ul> can only have <li> as a child, same goes for <ol>
+Any angle brackets must be escaped as &lt; and &gt; for left and right brackets respectively
+3
+
+
+6 MONTHS LATER
+
+UNLISTED AUG 10, '16

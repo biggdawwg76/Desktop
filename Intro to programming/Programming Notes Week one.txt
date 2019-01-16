@@ -1,0 +1,28 @@
+Bold tag <b> Bold opening and closinng tag</b>
+
+em = Emphasis / makes thing Italic
+
+Summary
+You've learned a lot so far! Let's recap some of the big ideas:
+
+The World Wide Web
+The web is composed largely of HTML documents. HTML stands for HyperText Markup Language and is the language the browsers use to interpret web pages. The components of the web include the client (your computer and browser), the Internet, and servers. The client and servers interact through something called the Hypertext Transfer Protocol (HTTP).
+
+Basic HTML Elements
+HTML elements are what we use to tell a web browser how to display content on a web page. 
+Most HTML elements consist of an opening and a closing tag with some content between them. 
+
+<b>text</b> Makes the 'text' content bold 
+<em>text</em> Makes the 'text' content italic
+
+HTML Attributes
+Some elements accept additional values called attributes in their opening tags. Attributes provide additional information to the browser. For example, the anchor tag takes an attribute called href that defines a URL to link to. 
+
+<a href="url">link</a> Creates a hyperlink to the href attribute value url and names it link
+<img src="url" alt="text"> Displays the image hosted at the src attribute value "url" (this can also be a path to a local file on your computer). If the image cannot be displayed, then the alt attribute value "text" is shown.
+
+More HTML Elements
+<p>text</p> Defines a paragraph. The content of the <p> element is in a "box" 
+<br> Creates a line break 
+<div>content</div> Creates a "box" container element 
+<span>content</span> Creates an "inline" container element

@@ -1,0 +1,29 @@
+
+.description {display: -webkit-flex;
+    display: flex;}
+.screenshot { display: -webkit-flex;
+  display: flex;}
+* {-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;}
+
+body {background-color: black}
+  .title {font-size: 78px}
+  .title{color:red}
+  .title {max-width: 6000px}
+h1 {color: red}
+h1 {font-size: 75px}
+h1 {max-width: 6000px}
+h2 {font-size: 50px}
+h2 {color: red}
+h2 {max-width: 400px}
+img {max-width: 460px}
+img {max-height: 460px}
+img {min-width: 460px}
+img {min-height: 460px}
+.description {max-width: 1000px}
+.href {color:green}
+.description {font-size: 20px}
+.description {color: blue
+}

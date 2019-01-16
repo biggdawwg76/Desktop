@@ -1,0 +1,21 @@
+﻿Summary — Running Code from the Command Line
+Summary of commands
+In the preceding command line tutorial, you learned how to execute the following commands:
+
+ls, which lists the contents of a directory,
+cd, which changes your working directory,
+pwd, which prints your working (current) directory,
+open / start, which opens a file (on Mac or Windows, respectively),
+touch, which creates a new file with a specified extension or file type,
+mkdir, which makes (creates) a new directory,
+rm, which permanently removes a file,
+rmdir, which permanently removes an empty directory,
+rm -r, which permanently removes a directory and its contents (without confirmation), and
+rm -ri, which permanently removes a directory and its contents (with confirmation).
+Running Python files from the command line
+Now, you can use the commands you learned in this tutorial to run Python code on your computer. To do so, follow these instructions:
+
+Save your Python code with a .py extension. Note the location of this file on your computer.
+Open a shell window. Use the command line to navigate to the directory in which your Python file is saved.
+Run the Python file by typing python, followed by the full name of the Python file. For instance, to run a file named test.py that lives in your working directory, you would execute the command python test.py. (Note: For Windows users running Git Bash, you should instead execute the command winpty python test.py to run your Python file.)
+In the shell window, you’ll receive the output of your Python code. (Note: Remember that any changes made to your Python file — for example, those made through your text editor — need to be saved in order to be reflected when executing that Python file through the command line.)
